@@ -37,7 +37,7 @@ $check = mysqli_fetch_array($result);
 if(!$check){
 	$message = "wrong user id or password";
 	echo $message."<br>";
-	echo $username."<br>" ;
+echo $username."<br>" ;
 	echo $password ."<br>";
 }
 else{
