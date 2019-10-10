@@ -31,7 +31,8 @@ $password = $_POST["pass"];
 
 $query="SELECT no FROM bi00s WHERE user='$username' AND pass='$password' ";
 
-$result = mysqli_query( $conn, $query);
+//$result = mysqli_query( $conn, $query);
+	$result = $conn->query($sql);
 $check = mysqli_fetch_array($result);
 
 if(!$check){
